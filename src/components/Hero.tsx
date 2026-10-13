@@ -113,8 +113,8 @@ export default function Hero() {
           </div>
         </div>
         <div className="float-chip chip-top">
-          <span>4.09 / 5.00</span>
-          <small>University CGPA</small>
+          <span>Second Class Upper</span>
+          <small>B.Sc. Computer Science · 2:1</small>
         </div>
         <div className="float-chip chip-bottom">
           <span>2 internships</span>
