@@ -87,8 +87,7 @@ export default function Projects() {
     <section className="section container" id="projects">
       <Reveal>
         <SectionTitle
-          eyebrow="02 / Selected work"
-          title="Projects with a purpose."
+          title="Projects"
           description="A selection of internship contributions, independent builds, and learning projects. Each is labelled accurately as completed, a prototype, or in preparation."
         />
       </Reveal>

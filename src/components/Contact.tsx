@@ -16,14 +16,14 @@ export default function Contact() {
       <Reveal>
         <div className="contact-card">
           <span className="eyebrow">
-            <span className="eyebrow-line" /> 06 / Contact
+            <span className="eyebrow-line" /> Contact
           </span>
           <h2>
             Let&apos;s build something <span>meaningful.</span>
           </h2>
           <p>
-            I&apos;m open to junior data analyst, Python development, IT support,
-            and other early-career opportunities. Let&apos;s connect.
+            I&apos;m open to junior data analyst, Python development, IT
+            support, and other early-career opportunities. Let&apos;s connect.
           </p>
 
           <div className="contact-actions">
@@ -59,7 +59,10 @@ export default function Contact() {
           <p className="contact-note">
             <a href={`mailto:${contact.email}`}>{contact.email}</a>
             {"  ·  "}
-            <span className="contact-location" style={{ display: "inline-flex" }}>
+            <span
+              className="contact-location"
+              style={{ display: "inline-flex" }}
+            >
               <MapPin size={13} /> {profile.location}
             </span>
           </p>

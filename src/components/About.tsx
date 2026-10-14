@@ -11,7 +11,24 @@ const cards = [
 ];
 
 export default function About() {
-  return <section className="section container" id="about"><Reveal><SectionTitle eyebrow="01 / About me" title="Curious mind. Practical solutions." description={profile.about} /></Reveal>
-    <div className="about-grid">{cards.map(({ icon: Icon, label, sub }, i) => <Reveal key={label} delay={i * 0.06}><div className="info-card"><span className="info-icon"><Icon size={22} /></span><h3>{label}</h3><p>{sub}</p></div></Reveal>)}</div>
-  </section>;
+  return (
+    <section className="section container" id="about">
+      <Reveal>
+        <SectionTitle title="About Me" description={profile.about} />
+      </Reveal>
+      <div className="about-grid">
+        {cards.map(({ icon: Icon, label, sub }, i) => (
+          <Reveal key={label} delay={i * 0.06}>
+            <div className="info-card">
+              <span className="info-icon">
+                <Icon size={22} />
+              </span>
+              <h3>{label}</h3>
+              <p>{sub}</p>
+            </div>
+          </Reveal>
+        ))}
+      </div>
+    </section>
+  );
 }
